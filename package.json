@@ -1,0 +1,13 @@
+{
+  "name": "functional-programming-with-es6-and-ramda",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node --experimental-modules src/app.mjs"
+  },
+  "author": "OJIMA Ryoji",
+  "license": "EPL-1.0",
+  "dependencies": {
+    "ramda": "^0.25.0"
+  }
+}
