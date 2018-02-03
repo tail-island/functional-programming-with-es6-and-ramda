@@ -5,3 +5,4 @@ export const maxBy = (pred, xs) => reduce(R.maxBy(pred), xs);  // reduce(R.maxBy
 export const indexed = (xs) => R.addIndex(R.map)(R.constructor(Array), xs);
 export const maxIndexBy = (pred, xs) => maxBy(R.apply(pred), indexed(xs))[1];
 export const adjustPath = (path, func, xs) => R.assocPath(path, func(R.path(path, xs)), xs);
+export const iterate = (func, count) => R.apply(R.pipe)(R.repeat(func, count));
